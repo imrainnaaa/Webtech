@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="auth-body">
+        <div class="auth-card">
+            <h1>Create Account</h1>
+            <p class="subtitle">Fill in the details to register</p>
+            <form action="index.html" method="get">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name"
+                    plceholder="Imran" required>
+        </div>
+        <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"
+                    plceholder="imran@gmail.com" required>
+        </div>
+        <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"
+                    plceholder="Atleast 6 characters"
+                    minlength="6" required>
+        </div>
+        <div class="form-group">
+                    <label for="confirm">Confirm Password:</label>
+                    <input type="password" id="confirm" name="confirm"
+                    plceholder="Re-enter your password"
+                    minlength="6" required>
+        </div>
+        <div class="form-group">
+            <label>Gender</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="gender"
+                    value="male" required>Male
+                </label>
+                <label>
+                    <input type="radio" name="gender"
+                    value="female" required>Female
+                </label>
+                <label>
+                    <input type="radio" name="gender"
+                    value="other" required>Other
+                </label>
+            </div>
+        </div>
+        <label class="checkbox">
+            <input type="checkbox" name="terms" required>
+            I agree to the terms of conditions
+        </label>
+        <button type="submit" class="btn">Register</button>
+        </form>
+        <p class="switch-text">
+            Already have an account?
+            <a href="index.html">Login</a>
+        </p>
+        </div>
+    </body>
+    </html>
+    
